@@ -4,5 +4,5 @@ python3-dev
 libtk8.6
 r-base
 r-base-dev
-r-dplyr
-r-httk
+r-cran-dplyr
+r-cran-httk
