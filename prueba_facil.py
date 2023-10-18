@@ -29,8 +29,8 @@ import time
 import io
 import os
 
-os.environ["R_HOME"] = 'C:/Program Files/R/R-4.3.1' 
-os.environ["PATH"] = 'C:/Program Files/R/R-4.3.1/bin/x64' + ";" + os.environ["PATH"] 
+# os.environ["R_HOME"] = 'C:/Program Files/R/R-4.3.1' 
+# os.environ["PATH"] = 'C:/Program Files/R/R-4.3.1/bin/x64' + ";" + os.environ["PATH"] 
 
 import rpy2.rinterface
 from rpy2.robjects import pandas2ri, r
