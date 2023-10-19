@@ -197,7 +197,6 @@ if st.button("Press to load transporter datasets"):
         r.assign("df_r", pandas_df_2_r)
     
         script_r = r('''
-                        install.packages('httk')
                         library(httk)
                         library(dplyr)
                         
