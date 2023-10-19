@@ -197,6 +197,7 @@ with (ro.default_converter + pandas2ri.converter).context():
     r.assign("df_r", pandas_df_2_r)
 
     script_r = r('''
+                    install.packages('httk')
                     library(httk)
                     library(dplyr)
                     
