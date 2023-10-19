@@ -5,4 +5,3 @@ libtk8.6
 r-base
 r-base-dev
 r-cran-dplyr
-r-cran-httk2.2.2
