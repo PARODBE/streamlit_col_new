@@ -77,35 +77,35 @@ else:
     
 st.info("Loading transporter datasets...")
 
-df_bcrp=PandasTools.LoadSDF(r"C:\Users\parod\OneDrive\Escritorio\Doctorado\etransafe_aop\Datasets\chembl_data_bcrp.sdf")
+df_bcrp=PandasTools.LoadSDF("chembl_data_bcrp.sdf")
 df_bcrp['inchi']=[Chem.MolToInchi(m) for m in df_bcrp.ROMol]
 df_bcrp=df_bcrp[df_bcrp.standard_type=='IC50']
 df_bcrp['pchembl_value']=df_bcrp['pchembl_value'].astype('float')
-df_mrp2=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_mrp2.sdf")
+df_mrp2=PandasTools.LoadSDF("chembl_data_mrp2.sdf")
 df_mrp2['inchi']=[Chem.MolToInchi(m) for m in df_mrp2.ROMol]
 df_mrp2=df_mrp2[df_mrp2.standard_type=='IC50']
 df_mrp2['pchembl_value']=df_mrp2['pchembl_value'].astype('float')
-df_mrp3=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_mrp3.sdf")
+df_mrp3=PandasTools.LoadSDF("chembl_data_mrp3.sdf")
 df_mrp3['inchi']=[Chem.MolToInchi(m) for m in df_mrp3.ROMol]
 df_mrp3=df_mrp3[df_mrp3.standard_type=='IC50']
 df_mrp3['pchembl_value']=df_mrp3['pchembl_value'].astype('float')
-df_mrp4=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_mrp4.sdf")
+df_mrp4=PandasTools.LoadSDF("chembl_data_mrp4.sdf")
 df_mrp4['inchi']=[Chem.MolToInchi(m) for m in df_mrp4.ROMol]
 df_mrp4=df_mrp4[df_mrp4.standard_type=='IC50']
 df_mrp4['pchembl_value']=df_mrp4['pchembl_value'].astype('float')
-df_oat1=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_OATP1b1.sdf")
+df_oat1=PandasTools.LoadSDF("chembl_data_OATP1b1.sdf")
 df_oat1['inchi']=[Chem.MolToInchi(m) for m in df_oat1.ROMol]
 df_oat1=df_oat1[df_oat1.standard_type=='IC50']
 df_oat1['pchembl_value']=df_oat1['pchembl_value'].astype('float')
-df_oat2=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_OATP1b3.sdf")
+df_oat2=PandasTools.LoadSDF("chembl_data_OATP1b3.sdf")
 df_oat2['inchi']=[Chem.MolToInchi(m) for m in df_oat2.ROMol]
 df_oat2=df_oat2[df_oat2.standard_type=='IC50']
 df_oat2['pchembl_value']=df_oat2['pchembl_value'].astype('float')
-df_bsep=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_bsep.sdf")
+df_bsep=PandasTools.LoadSDF("chembl_data_bsep.sdf")
 df_bsep['inchi']=[Chem.MolToInchi(m) for m in df_bsep.ROMol]
 df_bsep=df_bsep[df_bsep.standard_type=='IC50']
 df_bsep['pchembl_value']=df_bsep['pchembl_value'].astype('float')
-df_pgp=PandasTools.LoadSDF(r"C:/Users/parod/OneDrive/Escritorio/Doctorado/etransafe_aop/Datasets/chembl_data_pgp.sdf")
+df_pgp=PandasTools.LoadSDF("chembl_data_pgp.sdf")
 df_pgp['inchi']=[Chem.MolToInchi(m) for m in df_pgp.ROMol]
 df_pgp=df_pgp[df_pgp.standard_type=='IC50']
 df_pgp['pchembl_value']=df_pgp['pchembl_value'].astype('float')
